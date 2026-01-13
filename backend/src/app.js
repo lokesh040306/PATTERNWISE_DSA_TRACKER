@@ -19,8 +19,11 @@ app.use('/api', routes);
 app.get('/health', (_, res) => {
   res.status(200).json({ status: 'OK' });
 });
-
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 /* ---------- ERROR HANDLER ---------- */
 app.use(errorHandler);
+
 
 export default app;
