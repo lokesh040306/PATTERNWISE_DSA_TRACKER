@@ -1,8 +1,11 @@
 # Node
 node_modules/
 npm-debug.log
-.env
 /frontend/node_modules/
 /frontend/build/
 /.backend/node_modules/
 /backend/dist/
+
+# Environment variables
+.env
+.env.*
